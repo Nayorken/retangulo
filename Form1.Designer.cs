@@ -63,6 +63,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Saber";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label1
             // 
@@ -71,7 +72,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 109);
             this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
             // 
             // label2
             // 

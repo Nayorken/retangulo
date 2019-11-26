@@ -17,11 +17,20 @@ namespace retangulo
             InitializeComponent();
         }
 
-        retangulo dn = new retangulo();
+        retangulo r = new retangulo();
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            r.Altura =  textBox2.Text;
+            r.Largura = textBox1.Text;
+            if (radioButton1.Checked) label1.Text = r.Area;
+            else if (radioButton2.Checked) label1.Text = r.Perimetro;
+            else if (radioButton3.Checked) label1.Text = r.Diagonal;
         }
     }
 }
